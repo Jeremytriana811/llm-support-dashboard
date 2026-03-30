@@ -48,6 +48,7 @@ A simple flow is:
 `React frontend -> FastAPI backend -> PostgreSQL database`
 
 # How to Run 
+
 Open a new PowerShell:
 
 cd C:\Users\Jerem\Downloads\llm-support-dashboard\backend
@@ -75,18 +76,24 @@ Open a new PowerShell:
 cd C:\Users\Jerem\Downloads\llm-support-dashboard\backend
 .\venv\Scripts\python.exe seed_tickets.py
 
-# What to Check
+## What to Check
 The dashboard opens in the browser
 The ticket form works
 The table shows saved tickets
 The chart displays ticket counts
-FastAPI docs open at http://localhost:8000/docs
-# Main Local Links
+
+-FastAPI docs open at http://localhost:8000/docs
+
+## Main Local Links
+
 Frontend: http://localhost:3000
 If port 3000 is busy, use the Vite link shown in the terminal
-Backend docs: http://localhost:8000/docs
-Tickets JSON: http://localhost:8000/tickets
-Metrics JSON: http://localhost:8000/metrics/tickets
+
+-Backend docs: http://localhost:8000/docs
+
+-Tickets JSON: http://localhost:8000/tickets
+
+-Metrics JSON: http://localhost:8000/metrics/tickets
 
 ## Project Structure
 
