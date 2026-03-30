@@ -47,6 +47,47 @@ A simple flow is:
 
 `React frontend -> FastAPI backend -> PostgreSQL database`
 
+# How to Run 
+Open a new PowerShell:
+
+cd C:\Users\Jerem\Downloads\llm-support-dashboard\backend
+$env:USE_REAL_MODELS="false"
+.\venv\Scripts\python.exe -m uvicorn main:app --reload --port 8000
+
+Open:
+
+http://localhost:8000/docs
+
+3. Start the frontend
+
+Open a new PowerShell:
+
+cd C:\Users\Jerem\Downloads\llm-support-dashboard\frontend
+$env:Path += ";C:\Program Files\nodejs"
+& "C:\Program Files\nodejs\npm.cmd" run dev
+
+Then open the local Vite link shown in the terminal.
+
+4. Seed sample tickets
+
+Open a new PowerShell:
+
+cd C:\Users\Jerem\Downloads\llm-support-dashboard\backend
+.\venv\Scripts\python.exe seed_tickets.py
+
+# What to Check
+The dashboard opens in the browser
+The ticket form works
+The table shows saved tickets
+The chart displays ticket counts
+FastAPI docs open at http://localhost:8000/docs
+# Main Local Links
+Frontend: http://localhost:3000
+If port 3000 is busy, use the Vite link shown in the terminal
+Backend docs: http://localhost:8000/docs
+Tickets JSON: http://localhost:8000/tickets
+Metrics JSON: http://localhost:8000/metrics/tickets
+
 ## Project Structure
 
 ```text
