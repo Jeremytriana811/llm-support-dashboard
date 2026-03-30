@@ -8,7 +8,6 @@ This project uses a FastAPI backend, PostgreSQL database, and React frontend. Us
 
 ## Project Preview
 
-Add a screenshot of the app here.
 
 ![Dashboard Preview](assets/dashboard.png)
 
@@ -41,7 +40,6 @@ The project also includes a simple ML file structure for ticket classification a
 
 ## Architecture
 
-Add a simple architecture image here.
 
 ![Architecture](assets/Apic.png)
 
