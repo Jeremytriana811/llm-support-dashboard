@@ -252,7 +252,7 @@ export default function App() {
 
       {/* Footer */}
       <footer style={styles.footer}>
-        Built with FastAPI, React, Hugging Face Transformers, PostgreSQL & Docker
+        Built with FastAPI, React, PostgreSQL, Chart.js, and Docker
       </footer>
     </div>
   );
