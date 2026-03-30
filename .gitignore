@@ -2,11 +2,16 @@
 __pycache__/
 *.pyc
 *.pyo
+*.env
 .env
 venv/
+backend/venv/
+frontend/venv/
+backend/__pycache__/
 
 # Node
 node_modules/
+frontend/node_modules/
 dist/
 .vite/
 
@@ -22,5 +27,5 @@ pgdata/
 .DS_Store
 Thumbs.db
 
-# ML models cache (large files - don't commit these)
+# ML cache
 .cache/
