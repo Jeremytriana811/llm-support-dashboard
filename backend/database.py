@@ -17,7 +17,6 @@ from sqlalchemy.orm import sessionmaker, declarative_base
 # 1. Build the database URL
 # ---------------------------------------------------------------------------
 # We read the URL from an environment variable so we can change it easily
-# (e.g., different passwords in development vs. production).
 # Format: postgresql://USERNAME:PASSWORD@HOST:PORT/DATABASE_NAME
 DATABASE_URL = os.getenv(
     "DATABASE_URL",

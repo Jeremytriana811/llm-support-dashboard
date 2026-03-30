@@ -15,26 +15,22 @@ from models import Ticket
 from schemas import TicketCreate, TicketResponse, MetricsResponse
 from ml import classify_ticket, summarize_ticket
 
-# ---------------------------------------------------------------------------
 # 1. Create the database tables (if they don't exist yet)
-# ---------------------------------------------------------------------------
+
 Base.metadata.create_all(bind=engine)
 
-# ---------------------------------------------------------------------------
+
 # 2. Create the FastAPI app
-# ---------------------------------------------------------------------------
 app = FastAPI(
     title="LLM Support Analytics Dashboard",
     description="AI-powered support ticket classification & summarization",
     version="1.0.0",
 )
 
-# ---------------------------------------------------------------------------
+
 # 3. Set up CORS (Cross-Origin Resource Sharing)
-# ---------------------------------------------------------------------------
-# CORS is a security feature in browsers. By default, a web page on
-# localhost:5173 (React frontend) can't call an API on localhost:8000
-# (backend). This middleware tells the browser "it's okay, let them talk."
+# CORS is a security feature in browsers. 
+
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],       # Allow any origin (fine for development)
@@ -44,9 +40,9 @@ app.add_middleware(
 )
 
 
-# ---------------------------------------------------------------------------
+
 # 4. Endpoints
-# ---------------------------------------------------------------------------
+
 
 @app.get("/")
 def root():

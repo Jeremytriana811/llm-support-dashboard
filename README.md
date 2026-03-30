@@ -43,7 +43,7 @@ The project also includes a simple ML file structure for ticket classification a
 
 Add a simple architecture image here.
 
-![Architecture](assets/architecture.png)
+![Architecture](assets/Apic.png)
 
 A simple flow is:
 

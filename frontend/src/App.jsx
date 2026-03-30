@@ -24,7 +24,7 @@ import {
 } from "chart.js";
 import { Bar } from "react-chartjs-2";
 
-// Register Chart.js components (required by Chart.js v4)
+// Register Chart.js components 
 ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend);
 
 // ---------------------------------------------------------------------------
